@@ -89,7 +89,7 @@
     /* Unlocking */
     
     i.icons>i {
-        opacity: .6;
+        opacity: .2;
     }
     
     i.icons>i.lock.icon {
@@ -98,12 +98,24 @@
     }
     /* RWD */
     
+    @media(max-width: 1200px) {
+        skill {
+            width: calc(100% / 4 - 20px);
+        }
+    }
+    
     @media(max-width: 1000px) {
         skill {
             width: calc(100% / 2 - 20px);
         }
         skill:hover {
             box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2);
+        }
+    }
+    
+    @media(max-width: 390px) {
+        skill {
+            width: calc(100% - 20px);
         }
     }
     /*===============================

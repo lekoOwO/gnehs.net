@@ -24,12 +24,14 @@ html
 		title 棒棒勝OuO
 		meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
 		meta(charset='utf-8')
+
 		include ./../Jade/_tocasui.jade
 		link(href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css',rel='stylesheet')
 		link(href='https://fonts.googleapis.com/css?family=Jura',rel='stylesheet')
 		link(href='style.css',rel='stylesheet')
-		//-include ./../../Jade/_tags.jade
-		//-+social_tags('7月新番','7月新番最新情報','https://gnehs.github.io/Anime-List/og.jpg','https://gnehs.github.io/Anime-List/')
+
+		include ./../Jade/_tags.jade
+		+social_tags('棒棒勝','大家好這裡是棒棒勝，目前在鬼島台灣擔任可悲的高中生，好，我實在不擅長寫這個。','https://gnehs.net/img/og.png','https://gnehs.net/')
 	body
 		header.ts.fluid.big.slate
 			.image
