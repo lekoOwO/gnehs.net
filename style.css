@@ -28,7 +28,26 @@
     header .description {
         font-size: 1.35em !important;
     }
-    
+
+    header.slate>#iconDiv{
+        margin-top: 3.5em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    header.slate>#iconDiv>a>i{
+        color: #fff;
+        text-rendering: optimizelegibility;
+        text-shadow: 0 0 3px rgba(0,0,0,0.8);
+        opacity: .75;
+        text-align: center;
+    }
+
+    header.slate>#iconDiv>a>i:hover{
+        opacity: 1;
+    }
+
     #avater {
         max-height: 170px;
         border-radius: 100em;
@@ -71,12 +90,16 @@
     }
     
     skill i {
+        font-style: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        user-select: none;
         font-size: 7em;
         text-align: center;
         width: 100%;
         display: block;
     }
-    
+
     skills .content {
         font-family: 'Jura', sans-serif;
         font-weight: 700;
