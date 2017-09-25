@@ -13,7 +13,7 @@
         box-shadow: 0 -3px 14px 12px rgba(0, 0, 0, 0.2);
         margin-bottom: 35px;
         height: 100vh;
-        padding-top: calc(50vh - 200px) !important;
+        padding-top: 25vh !important;
     }
     
     header.slate>.image>img {
@@ -65,6 +65,26 @@
         margin-right: auto;
         margin-bottom: 25px;
         box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    #avater:hover {
+        animation: flip 1s ease;
+    }
+    
+    @keyframes flip {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+    /* RWD */
+    
+    @media(max-height: 400px) {
+        header>*:not(#avater):not(.image) {
+            display: none;
+        }
     }
     /*===============================
              Skills
